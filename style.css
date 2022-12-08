@@ -6,6 +6,7 @@
   list-style: none;
   border: none;
   scroll-behavior: smooth;
+  font-family: "Poppins";
 }
 
 body {
@@ -16,7 +17,6 @@ body {
 .my-logo {
   width: 140px;
   height: 10px;
-  font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
