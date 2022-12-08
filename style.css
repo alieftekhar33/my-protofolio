@@ -6,12 +6,15 @@
   list-style: none;
   border: none;
   scroll-behavior: smooth;
-  font-family: "Poppins";
 }
 
 body {
   width: 375px;
   background-color: #e5e5e5;
+}
+
+a {
+  font-family: "Poppins";
 }
 
 .my-logo {
