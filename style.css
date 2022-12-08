@@ -26,7 +26,7 @@ body {
 .main-container {
   width: 375px;
   height: 718px;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;v
   background-image: url("img/bkgd.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -43,7 +43,7 @@ nav h2 {
   list-style: none;
   text-decoration: none;
   color: #6070ff;
-  font-family: "Poppins", sans-serif;
+  c
   font-style: normal;
   font-weight: 700;
   font-size: 1.5rem;
