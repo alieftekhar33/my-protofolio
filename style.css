@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 375px;
+  background-color: #e5e5e5;
+}
+
+h2 {
+  text-decoration: none;
+}
+
+.main-container {
+  width: 375px;
+  height: 718px;
+  background-image: url("img/bkgd.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.status-bar {
+  background-color: #fff;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 8%;
+}
+
+nav h2 {
+  list-style: none;
+  text-decoration: none;
+  color: #6070ff;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 20px;
+}
+
+nav a {
+  cursor: pointer;
+}
+
+.header-section {
+  display: flex;
+  height: 587px;
+  flex-direction: column;
+  padding: 10px;
+  margin-top: 90px;
+}
+
+.title {
+  width: 327px;
+  height: 150px;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  margin: 15px 40px 15px 5px;
+  color: #172b4d;
+  padding-left: 10px;
+  padding-right: 20px;
+}
+
+.biography {
+  justify-content: center;
+  flex-wrap: wrap;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+  margin: 15px;
+}
+
+.contact {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f8cff;
+  margin: 0 15px 15px 15px;
+  justify-content: flex-start;
+}
+
+.social-icons ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  text-decoration: none;
+  justify-content: flex-start;
+  gap: 20px;
+  align-items: center;
+  margin-left: 15px;
+}
