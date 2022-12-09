@@ -62,9 +62,9 @@ Example commands:
 
 👤 **Author**
 
-- GitHub: [@MarkoKermiciev](https://github.com/alieftekhar33)
-- Twitter: [@Marko Kermichiev](https://twitter.com/Alieftekhar23)
-- LinkedIn: [Marko Kermiciev](https://www.linkedin.com/in/sonil-hassan-eftekhar-951411257/)
+- GitHub: [Sonil Hassan Eftekhar](https://github.com/alieftekhar33)
+- Twitter: [Sonil Hassan Eftekhar](https://twitter.com/Alieftekhar23)
+- LinkedIn: [Sonil Hassan Eftekhar](https://www.linkedin.com/in/sonil-hassan-eftekhar-951411257/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
