@@ -24,6 +24,9 @@
 
 ## 🛠 Built With <a name="HTML_and_CSS"></a>
 
+- Html
+- CSS
+
 <!-- Features -->
 
 ### Key Features <a name="using_Figma_Template"></a>
