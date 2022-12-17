@@ -32,6 +32,13 @@
   font-weight: 700;
   color: #6070ff;
   line-height: 20px;
+  animation-name: spin;
+  animation-duration: 3s;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to {transform: rotate(360deg);}
 }
 
 .bar-button {
