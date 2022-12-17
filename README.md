@@ -24,6 +24,9 @@
 
 ## 🛠 Built With <a name="HTML_and_CSS"></a>
 
+- Html
+- CSS
+
 <!-- Features -->
 
 ### Key Features <a name="using_Figma_Template"></a>
@@ -45,8 +48,7 @@ To get a local copy up and running, follow these steps.
 
 ### Setup
 
-Clone this repository to your desired folder:
-https://github.com/MarkoKermi/Portfolio-Website
+Clone this repository to your desired folder
 
 <!--
 Example commands:
