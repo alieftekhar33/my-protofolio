@@ -49,6 +49,23 @@ To get a local copy up and running, follow these steps.
 ### Setup
 
 Clone this repository to your desired folder
+>Git clone <https://github.com/alieftekhar33/my-protofolio.git>
+
+### Usage
+
+Visit the website using the link https://alieftekhar33.github.io/my-protofolio/
+
+### Deployment
+
+This project can be deployed using Github pages. Click https://alieftekhar33.github.io/my-protofolio/ to visit the website hosted on Github pages.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!--Future features -->
+## Future features <a name="future-features"></a>
+.Javascript will be added to make the site more interractive
+.The contact form will be updated to accept user input and details will be sent to a database stored on a server.
+.forms and buttons will be updated to submit information to server
 
 <!--
 Example commands:
