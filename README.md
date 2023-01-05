@@ -54,11 +54,12 @@ To get a local copy up and running, follow these steps.
 
 ### Usage
 
-Visit the website using the link https://alieftekhar33.github.io/my-protofolio/
+>Visit the website using the link 
+-[Demo Webpage](https://alieftekhar33.github.io/my-protofolio/)
 
 ### Deployment
 
-This project can be deployed using Github pages. Click https://alieftekhar33.github.io/my-protofolio/ to visit the website hosted on Github pages.
+This project can be deployed using Github pages. Click [Project](https://alieftekhar33.github.io/my-protofolio/) to visit the website hosted on Github pages.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
