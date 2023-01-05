@@ -12,17 +12,31 @@
     ></script>
   </head>
   <body>
+    <div id="popupModal" class="pop_up_window"></div>
+
     <header class="header">
       <nav class="navbar">
         <div class="web-name">Sonil Hassan</div>
-        <ul class="menu">
-          <li class="menu-bar"><a href="#">Portfolio</a></li>
-          <li class="menu-bar"><a href="#">About</a></li>
-          <li class="menu-bar"><a href="#">Contact</a></li>
+        <ul class="menu" id="menu">
+          <li class="menu-bar" onclick="closemenu()">
+            <a href="#portfolio">Portfolio</a>
+          </li>
+          <li class="menu-bar" onclick="closemenu()">
+            <a href="#about-me">About</a>
+          </li>
+          <li class="menu-bar" onclick="closemenu()">
+            <a href="#contact-form">Contact</a>
+          </li>
+          <i class="fa-solid fa-xmark right" onclick="closemenu()"></i>
         </ul>
         <a href="#" class="bar-button">
-          <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </a>
+        <ul class="menu-desktop">
+          <li class="menu-bar"><a href="#portfolio">Portfolio</a></li>
+          <li class="menu-bar"><a href="#about-me">About</a></li>
+          <li class="menu-bar"><a href="#contact">Contact</a></li>
+        </ul>
       </nav>
     </header>
     <section class="radius">
@@ -65,7 +79,7 @@
       </section>
     </section>
 
-    <!-- ------------------------------------------------works------------------------------------->
+    <!---------------------------------------------------works------------------------------------->
     <section class="shadow-back">
       <div class="works">
         <img src="./img/tonic.png" alt="Work-sample" />
@@ -279,5 +293,6 @@
         </form>
       </div>
     </section>
+    <script src="main.js"></script>
   </body>
 </html>
