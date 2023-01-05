@@ -48,9 +48,9 @@ To get a local copy up and running, follow these steps.
 
 ### Setup
 
-Clone this repository to your desired folder
+> Clone this repository to your desired folder
 
-> Git clone <https://github.com/alieftekhar33/my-protofolio.git>
+- Git clone: [Live Demo Project Link](<https://github.com/alieftekhar33/my-protofolio.git>)
 
 ### Usage
 
