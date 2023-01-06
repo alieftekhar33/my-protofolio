@@ -1,21 +1,23 @@
 // menubar open and close
-const menu = document.getElementById('menu');
+const menu = document.getElementById('menu')
 const blurx = document.querySelector('.blurx');
 
 function openmenu() {
-  menu.style.display = 'block';
+  menu.style.display = 'block'
   blurx.classList.add('blur');
 }
 
 function closemenu() {
-  menu.style.display = 'none';
+  menu.style.display = 'none'
   blurx.classList.remove('blur');
 }
 
-menu.addEventListener('click', openmenu);
-menu.addEventListener('click', closemenu);
+menu.addEventListener('click', openmenu)
+menu.addEventListener('click', closemenu)
 
-const modalContainer = document.querySelector('#popupModal');
+// -----------------------popup and work data--------------------
+
+const modalContainer = document.querySelector('#popupModal')
 
 const projects = [
   {
@@ -70,7 +72,7 @@ const projects = [
     liveLink: 'Live Link',
     sourceLink: 'Source Link',
   },
-];
+]
 
 // ------------popup modal------------------
 
@@ -89,7 +91,7 @@ function popUpModal(project) {
           <li>2015</li>
         </ul>
       </div>
-      <img src="./images/${project.image}" alt="Work-sample" />
+      <img src="./img/${project.image}" alt="Work-sample" />
       <div class="two-part">
         <div class="left-popup">
           <p class="pro mobile-popup-info">
@@ -125,18 +127,20 @@ function popUpModal(project) {
         </div>
       </div>
     </div>
-  </div>`;
+  </div>`
 
-  return modalContent;
+  return modalContent
 }
 
+// ----------------------work samples--------------------
+
 function loadProjectCards(projects = []) {
-  let projectContents = '';
+  let projectContents = ''
 
   projects.forEach((project) => {
     projectContents += `
     <div class= "works" id= "portfolio">
-    <img src="./images/${project.image}" alt="Work-sample" class="img-transition"/>
+    <img src="./img/${project.image}" alt="Work-sample" class="img-transition"/>
     <div class="card-work work">
       <h3>${project.name}</h3>
       <ul class="proj">
@@ -157,40 +161,86 @@ function loadProjectCards(projects = []) {
       <button class="button button-mg" project-id="${project.id}" id="see-project-button">See Project</button>
     </div>
   </div>
-    `;
-  });
+    `
+  })
 
-  return projectContents;
+  return projectContents
 }
 
+// -----------------------open and close popup-----------------------
+
 function closePopUp() {
-  modalContainer.style.display = 'none';
+  modalContainer.style.display = 'none'
 }
 
 function openPopUp(project) {
-  const modalTemplate = popUpModal(project);
-  modalContainer.innerHTML = modalTemplate;
-  modalContainer.style.display = 'block';
+  const modalTemplate = popUpModal(project)
+  modalContainer.innerHTML = modalTemplate
+  modalContainer.style.display = 'block'
 
-  const popUpCloseButton = document.querySelector('#popupClose');
+  const popUpCloseButton = document.querySelector('#popupClose')
 
-  popUpCloseButton.addEventListener('click', closePopUp);
+  popUpCloseButton.addEventListener('click', closePopUp)
 }
 
 window.addEventListener('load', () => {
-  const portfolioSection = document.querySelector('#work');
-  modalContainer.style.display = 'none';
+  const portfolioSection = document.querySelector('#work')
+  modalContainer.style.display = 'none'
 
-  portfolioSection.innerHTML = loadProjectCards(projects);
+  portfolioSection.innerHTML = loadProjectCards(projects)
 
-  const proButtons = document.querySelectorAll('#see-project-button');
+  const proButtons = document.querySelectorAll('#see-project-button')
 
   Array.from(proButtons).forEach((element) => {
     element.addEventListener('click', () => {
-      const projectID = element.getAttribute('project-id');
-      const projectObj = projects.find((project) => project.id === projectID);
+      const projectID = element.getAttribute('project-id')
+      const projectObj = projects.find((project) => project.id === projectID)
 
-      openPopUp(projectObj);
-    });
-  });
-});
+      openPopUp(projectObj)
+    })
+  })
+})
+
+// ---------------------form validation-------------------------
+
+const email = document.getElementById('email')
+const error = document.getElementById('error')
+const form = document.getElementById('form')
+const emailValidation = (input) => {
+  if (input === input.toLowerCase()) {
+    return true
+  }
+  return false
+}
+form.addEventListener('submit', (event) => {
+  error.innerHTML = ''
+  if (emailValidation(email.value)) {
+    error.innerHTML = ''
+  } else {
+    event.preventDefault()
+    error.innerHTML = 'Please add Email in lowercase!'
+  }
+})
+
+// ------------------------local storage---------------
+
+const localData = document.querySelectorAll('.form-input')
+const localStoreData = {
+  name: '',
+  email: '',
+  message: '',
+}
+localData.forEach((input) => {
+  input.addEventListener('input', () => {
+    localStoreData[input.name] = input.value
+    localStoreData[input.email] = input.value
+    localStoreData[input.message] = input.value
+    localStorage.setItem('information', JSON.stringify(localStoreData))
+  })
+})
+const informationStored = JSON.parse(localStorage.getItem('information'))
+if (informationStored) {
+  localData.forEach((element) => {
+    element.value = informationStored[element.name]
+  })
+}

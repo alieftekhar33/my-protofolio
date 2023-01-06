@@ -13,13 +13,11 @@
   </head>
   <body>
     <div class="blurx"></div>
-
     <div id="popupModal" class="pop_up_window"></div>
 
     <header class="header">
       <nav class="navbar">
         <div class="web-name">Sonil Hassan</div>
-        <div class="blur-bkg"></div>
         <ul class="menu" id="menu">
           <li class="menu-bar" onclick="closemenu()">
             <a href="#portfolio">Portfolio</a>
@@ -38,14 +36,13 @@
         <ul class="menu-desktop">
           <li class="menu-bar"><a href="#portfolio">Portfolio</a></li>
           <li class="menu-bar"><a href="#about-me">About</a></li>
-          <li class="menu-bar"><a href="#contact">Contact</a></li>
+          <li class="menu-bar"><a href="#contact-form">Contact</a></li>
         </ul>
-      </div>
       </nav>
     </header>
-    <section class="radius">
+    <section class="radius" id="blur">
       <section class="dts background">
-        <div class="details" id="portfolio">
+        <div class="details">
           <h1>
             I'm Sonil Hassan <br />
             Glad to see you!
@@ -83,111 +80,19 @@
       </section>
     </section>
 
-    <!---------------------------------------------------works------------------------------------->
-    <section class="shadow-back">
-      <div class="works">
-        <img src="./img/tonic.png" alt="Work-sample" />
-        <div class="card-work work">
-          <h3>Tonic</h3>
-          <ul class="proj">
-            <li><a href="#">CANOPY</a></li>
-            <li><div class="dot"></div></li>
-            <li>Back End Dev</li>
-            <li><div class="dot"></div></li>
-            <li>2015</li>
-          </ul>
-          <p class="pro">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required.
-          </p>
-          <ul class="language">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-          </ul>
-          <a href="#" class="button">See Project</a>
-        </div>
-      </div>
-      <div class="works">
-        <img src="./img/multi-post.png" alt="Work-sample" />
-        <div class="card-work work">
-          <h3>Multi-Post Stories</h3>
-          <ul class="proj">
-            <li><a href="#">CANOPY</a></li>
-            <li><div class="dot"></div></li>
-            <li>Back End Dev</li>
-            <li><div class="dot"></div></li>
-            <li>2015</li>
-          </ul>
-          <p class="pro">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required.
-          </p>
-          <ul class="language">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-          </ul>
-          <a href="#" class="button">See Project</a>
-        </div>
-      </div>
-      <div class="works">
-        <img src="./img/tonic2.png" alt="Work-sample" />
-        <div class="card-work work">
-          <h3>Tonic</h3>
-          <ul class="proj">
-            <li><a href="#">CANOPY</a></li>
-            <li><div class="dot"></div></li>
-            <li>Back End Dev</li>
-            <li><div class="dot"></div></li>
-            <li>2015</li>
-          </ul>
-          <p class="pro">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required.
-          </p>
-          <ul class="language">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-          </ul>
-          <a href="#" class="button">See Project</a>
-        </div>
-      </div>
-      <div class="works">
-        <img src="./img/multi-post2.png" alt="Work-sample" />
-        <div class="card-work work">
-          <h3>Multi-Post Stories</h3>
-          <ul class="proj">
-            <li><a href="#">CANOPY</a></li>
-            <li><div class="dot"></div></li>
-            <li>Back End Dev</li>
-            <li><div class="dot"></div></li>
-            <li>2015</li>
-          </ul>
-          <p class="pro">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required.
-          </p>
-          <ul class="language">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-          </ul>
-          <a href="#" class="button">See Project</a>
-        </div>
-      </div>
-    </section>
+    <!-- ------------------------------------------------works--------------------------------         -->
+    <section id="work" class="shadow-back"></section>
+
     <!-- ------------------------------------------------about me--------------------------------         -->
-    <section class="border">
-      <section class="about" id="about-me">
+    <section class="border" id="about-me">
+      <section class="about">
         <div class="abmy">
           <h2>
             About <br />
             Myself
           </h2>
           <p>
-            Hello I'm a software developer! I can help you build a product ,
+            Hello I am a software developer! I can help you build a product ,
             feature or website Look through some of my work and experience! If
             you like what you see and have a project you need coded, don't
             hestiate to contact me.
@@ -215,7 +120,7 @@
               ></a>
             </li>
           </ul>
-          <a href="#" class="button">Get my resume</a>
+          <a href="#" class="button button-mg">Get my resume</a>
         </div>
         <div class="lagu">
           <ul class="about-me">
@@ -225,15 +130,15 @@
             </div>
             <li>
               <div class="languages">
-                <img src="./img/js.png" alt="JavaScript" />
+                <img src="./img/Ellipse 1.png" alt="JavaScript" />
                 <p>JavaScript</p>
               </div>
               <div class="languages">
-                <img src="./img/html.png" alt="HTML" />
+                <img src="./img/Ellipse 1 (1).png" alt="HTML" />
                 <p>HTML</p>
               </div>
               <div class="languages">
-                <img src="./img/css.png" alt="CSS" />
+                <img src="./img/Ellipse 1 (2).png" alt="CSS" />
                 <p>CSS</p>
               </div>
             </li>
@@ -266,11 +171,12 @@
             to help with it
           </p>
         </div>
-        <form action="https://formspree.io/f/xrgvzgnl" method="POST">
+        <form action="https://formspree.io/f/xrgvzgnl" method="post" id="form">
           <input
             type="text"
             name="full-name"
             id="name"
+            class="form-input"
             maxlength="30"
             placeholder="Name"
             required
@@ -279,12 +185,15 @@
             type="email"
             name="Email"
             id="email"
+            class="form-input"
             required
             placeholder="me@gmail.com"
           />
+          <span id="error"></span>
           <textarea
             name="message"
             id="textarea"
+            class="textarea form-input"
             cols="30"
             rows="10"
             placeholder="Write your message here"
@@ -292,11 +201,19 @@
             required
           ></textarea>
           <div>
-            <button class="button">Get It Touch</button>
+            <button
+              class="button form-button"
+              id="contact-button"
+              type="submit"
+            >
+              Get It Touch
+            </button>
           </div>
         </form>
       </div>
     </section>
+
     <script src="main.js"></script>
   </body>
 </html>
+sohail
