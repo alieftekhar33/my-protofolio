@@ -51,7 +51,7 @@
   z-index: 0;
   width: 100vw;
   height: 85vh;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(13px);
 }
 
 .bar-button {
@@ -90,8 +90,8 @@
   cursor: pointer;
   width: 25px;
   height: 25px;
-  top: 40px;
-  left: 310px;
+  top: 10px;
+  left: 385px;
 }
 
 .menu-desktop {
