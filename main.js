@@ -200,3 +200,24 @@ window.addEventListener('load', () => {
     });
   });
 });
+
+// ---------------------form validation-------------------------
+
+const email = document.getElementById('email');
+const error = document.getElementById('error');
+const form = document.getElementById('form');
+const emailValidation = (input) => {
+  if (input === input.toLowerCase()) {
+    return true;
+  }
+  return false;
+}
+form.addEventListener('submit', (event) => {
+  error.innerHTML = ''
+  if (emailValidation(email.value)) {
+    error.innerHTML = '';
+  } else {
+    event.preventDefault();
+    error.innerHTML = 'Please add Email in lowercase!';
+  }
+});
