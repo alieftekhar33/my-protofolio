@@ -70,12 +70,12 @@ const projects = [
     liveLink: 'Live Link',
     sourceLink: 'Source Link',
   },
-];
+]
 
 // ------------popup modal------------------
 
 function popUpModal(project) {
-  const modalContent = `
+  const modalContent = `;
   <div class= "popup-container">
     <div class= "popup">
       <div>
@@ -125,7 +125,7 @@ function popUpModal(project) {
         </div>
       </div>
     </div>
-  </div>`;
+  </div>`
 
   return modalContent;
 }
@@ -134,7 +134,7 @@ function loadProjectCards(projects = []) {
   let projectContents = '';
 
   projects.forEach((project) => {
-    projectContents += `
+    projectContents += `;
     <div class= "works" id= "portfolio">
     <img src="./images/${project.image}" alt="Work-sample" class="img-transition"/>
     <div class="card-work work">
@@ -157,7 +157,7 @@ function loadProjectCards(projects = []) {
       <button class="button button-mg" project-id="${project.id}" id="see-project-button">See Project</button>
     </div>
   </div>
-    `;
+    `
   });
 
   return projectContents;
@@ -169,7 +169,7 @@ function closePopUp() {
 
 function openPopUp(project) {
   const modalTemplate = popUpModal(project);
-  modalContainer.innerHTML = modalTemplate;
+  modalContainer.innerHTML = modalTemplate
   modalContainer.style.display = 'block';
 
   const popUpCloseButton = document.querySelector('#popupClose');
