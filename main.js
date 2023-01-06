@@ -15,7 +15,7 @@ function closemenu() {
 menu.addEventListener('click', openmenu);
 menu.addEventListener('click', closemenu);
 
-const modalContainer = document.querySelector('#popupModal');
+ const modalContainer = document.querySelector('#popupModal');
 
 const projects = [
   {
