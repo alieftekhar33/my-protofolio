@@ -38,17 +38,14 @@
 
 <!-- Features -->
 
-### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
+### Key Features <a name="using_Figma_Template"></a>
 
--**[Linters]**
-
-> A linter is a tool that analyzes your source code to flag programming errors, bugs, stylistic errors, and suspicious constructs
-
+- **[Linters]**
+  > A linter is a tool that analyzes your source code to flag programming errors, bugs, stylistic errors, and suspicious constructs
 - **[.gitignore]**
   > Specifies intentionally untracked files to ignore
-
+  
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
@@ -149,7 +146,7 @@ If you like this project,you can see and clone to your self by above link
 
 <!-- FAQ (optional) -->
 
-## ❓ FAQ (OPTIONAL) <a name="faq"></a>
+## ❓ FAQ <a name="faq"></a>
 
 > 2 questions for new developers would ask when they decide to use your project:
 
