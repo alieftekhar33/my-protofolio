@@ -70,7 +70,7 @@ const projects = [
     liveLink: 'Live Link',
     sourceLink: 'Source Link',
   },
-]
+];
 
 // ------------popup modal------------------
 
@@ -125,13 +125,13 @@ function popUpModal(project) {
         </div>
       </div>
     </div>
-  </div>`
+  </div>`;
 
-  return modalContent
+  return modalContent;
 }
 
 function loadProjectCards(projects = []) {
-  let projectContents = ''
+  let projectContents = '';
 
   projects.forEach((project) => {
     projectContents += `
@@ -157,8 +157,8 @@ function loadProjectCards(projects = []) {
       <button class="button button-mg" project-id="${project.id}" id="see-project-button">See Project</button>
     </div>
   </div>
-    `
-  })
+    `;
+  });
 
   return projectContents;
 }
@@ -179,7 +179,7 @@ function openPopUp(project) {
 
 window.addEventListener('load', () => {
   const portfolioSection = document.querySelector('#work');
-  modalContainer.style.display = 'none'
+  modalContainer.style.display = 'none';
 
   portfolioSection.innerHTML = loadProjectCards(projects);
 
@@ -191,6 +191,6 @@ window.addEventListener('load', () => {
       const projectObj = projects.find((project) => project.id === projectID);
 
       openPopUp(projectObj);
-    })
-  })
-})
+    });
+  });
+});
