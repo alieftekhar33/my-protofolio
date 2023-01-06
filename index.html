@@ -12,11 +12,14 @@
     ></script>
   </head>
   <body>
+    <div class="blurx"></div>
+
     <div id="popupModal" class="pop_up_window"></div>
 
     <header class="header">
       <nav class="navbar">
         <div class="web-name">Sonil Hassan</div>
+        <div class="blur-bkg"></div>
         <ul class="menu" id="menu">
           <li class="menu-bar" onclick="closemenu()">
             <a href="#portfolio">Portfolio</a>
@@ -37,11 +40,12 @@
           <li class="menu-bar"><a href="#about-me">About</a></li>
           <li class="menu-bar"><a href="#contact">Contact</a></li>
         </ul>
+      </div>
       </nav>
     </header>
     <section class="radius">
       <section class="dts background">
-        <div class="details">
+        <div class="details" id="portfolio">
           <h1>
             I'm Sonil Hassan <br />
             Glad to see you!
@@ -176,7 +180,7 @@
     </section>
     <!-- ------------------------------------------------about me--------------------------------         -->
     <section class="border">
-      <section class="about">
+      <section class="about" id="about-me">
         <div class="abmy">
           <h2>
             About <br />
@@ -252,7 +256,7 @@
       </section>
     </section>
     <!-- -------------------------------------------------contact form----------------------------  -->
-    <section class="contact-form">
+    <section class="contact-form" id="contact-form">
       <div class="form-container">
         <div class="margin-vertical-50px title-container">
           <h3 class="text-white contact-me">Contact me</h3>
