@@ -211,9 +211,9 @@ const emailValidation = (input) => {
     return true;
   }
   return false;
-}
+};
 form.addEventListener('submit', (event) => {
-  error.innerHTML = ''
+  error.innerHTML = '';
   if (emailValidation(email.value)) {
     error.innerHTML = '';
   } else {
