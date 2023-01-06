@@ -15,6 +15,8 @@ function closemenu() {
 menu.addEventListener('click', openmenu);
 menu.addEventListener('click', closemenu);
 
+// -----------------------popup and work data--------------------
+
 const modalContainer = document.querySelector('#popupModal');
 
 const projects = [
@@ -89,7 +91,7 @@ function popUpModal(project) {
           <li>2015</li>
         </ul>
       </div>
-      <img src="./images/${project.image}" alt="Work-sample" />
+      <img src="./img/${project.image}" alt="Work-sample" />
       <div class="two-part">
         <div class="left-popup">
           <p class="pro mobile-popup-info">
@@ -130,13 +132,15 @@ function popUpModal(project) {
   return modalContent;
 }
 
+// ----------------------work samples--------------------
+
 function loadProjectCards(projects = []) {
   let projectContents = '';
 
   projects.forEach((project) => {
     projectContents += `
     <div class= "works" id= "portfolio">
-    <img src="./images/${project.image}" alt="Work-sample" class="img-transition"/>
+    <img src="./img/${project.image}" alt="Work-sample" class="img-transition"/>
     <div class="card-work work">
       <h3>${project.name}</h3>
       <ul class="proj">
@@ -162,6 +166,8 @@ function loadProjectCards(projects = []) {
 
   return projectContents;
 }
+
+// -----------------------open and close popup-----------------------
 
 function closePopUp() {
   modalContainer.style.display = 'none';
