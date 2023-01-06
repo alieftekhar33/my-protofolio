@@ -229,12 +229,12 @@ const localStoreData = {
   name: '',
   email: '',
   message: '',
-}
+};
 localData.forEach((input) => {
   input.addEventListener('input', () => {
-    localStoreData[input.name] = input.value
-    localStoreData[input.email] = input.value
-    localStoreData[input.message] = input.value
+    localStoreData[input.name] = input.value;
+    localStoreData[input.email] = input.value;
+    localStoreData[input.message] = input.value;
     localStorage.setItem('information', JSON.stringify(localStoreData));
   });
 });
