@@ -127,7 +127,7 @@ function popUpModal(project) {
         </div>
       </div>
     </div>
-  </div>`
+  </div>`;
 
   return modalContent;
 }
@@ -184,7 +184,7 @@ function openPopUp(project) {
 }
 
 window.addEventListener('load', () => {
-  const portfolioSection = document.querySelector('#work')
+  const portfolioSection = document.querySelector('#work');
   modalContainer.style.display = 'none';
 
   portfolioSection.innerHTML = loadProjectCards(projects);
@@ -200,4 +200,3 @@ window.addEventListener('load', () => {
     });
   });
 });
-
