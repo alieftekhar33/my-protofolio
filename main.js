@@ -70,7 +70,7 @@ const projects = [
     liveLink: 'Live Link',
     sourceLink: 'Source Link',
   },
-]
+];
 
 // ------------popup modal------------------
 
@@ -125,7 +125,7 @@ function popUpModal(project) {
         </div>
       </div>
     </div>
-  </div>`
+  </div>`;
 
   return modalContent;
 }
@@ -157,7 +157,7 @@ function loadProjectCards(projects = []) {
       <button class="button button-mg" project-id="${project.id}" id="see-project-button">See Project</button>
     </div>
   </div>
-    `
+    `;
   });
 
   return projectContents;
@@ -169,7 +169,7 @@ function closePopUp() {
 
 function openPopUp(project) {
   const modalTemplate = popUpModal(project);
-  modalContainer.innerHTML = modalTemplate
+  modalContainer.innerHTML = modalTemplate;
   modalContainer.style.display = 'block';
 
   const popUpCloseButton = document.querySelector('#popupClose');
