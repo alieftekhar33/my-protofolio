@@ -26,6 +26,7 @@
 
 - Html
 - CSS
+- JavaScript
 
 <!-- Features -->
 
@@ -50,12 +51,11 @@ To get a local copy up and running, follow these steps.
 
 > Clone this repository to your desired folder
 
-- Git clone: [Live Demo Project Link](<https://github.com/alieftekhar33/my-protofolio.git>)
+- Git clone: [Live Demo Project Link](https://github.com/alieftekhar33/my-protofolio.git)
 
 ### Usage
 
->Visit the website using the link 
--[Demo Webpage](https://alieftekhar33.github.io/my-protofolio/)
+> Visit the website using the link -[Demo Webpage](https://alieftekhar33.github.io/my-protofolio/)
 
 ### Deployment
 

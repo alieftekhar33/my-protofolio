@@ -12,22 +12,40 @@
     ></script>
   </head>
   <body>
+    <div class="blurx"></div>
+
+    <div id="popupModal" class="pop_up_window"></div>
+
     <header class="header">
       <nav class="navbar">
         <div class="web-name">Sonil Hassan</div>
-        <ul class="menu">
-          <li class="menu-bar"><a href="#">Portfolio</a></li>
-          <li class="menu-bar"><a href="#">About</a></li>
-          <li class="menu-bar"><a href="#">Contact</a></li>
+        <div class="blur-bkg"></div>
+        <ul class="menu" id="menu">
+          <li class="menu-bar" onclick="closemenu()">
+            <a href="#portfolio">Portfolio</a>
+          </li>
+          <li class="menu-bar" onclick="closemenu()">
+            <a href="#about-me">About</a>
+          </li>
+          <li class="menu-bar" onclick="closemenu()">
+            <a href="#contact-form">Contact</a>
+          </li>
+          <i class="fa-solid fa-xmark right" onclick="closemenu()"></i>
         </ul>
         <a href="#" class="bar-button">
-          <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </a>
+        <ul class="menu-desktop">
+          <li class="menu-bar"><a href="#portfolio">Portfolio</a></li>
+          <li class="menu-bar"><a href="#about-me">About</a></li>
+          <li class="menu-bar"><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
       </nav>
     </header>
     <section class="radius">
       <section class="dts background">
-        <div class="details">
+        <div class="details" id="portfolio">
           <h1>
             I'm Sonil Hassan <br />
             Glad to see you!
@@ -65,7 +83,7 @@
       </section>
     </section>
 
-    <!-- ------------------------------------------------works------------------------------------->
+    <!---------------------------------------------------works------------------------------------->
     <section class="shadow-back">
       <div class="works">
         <img src="./img/tonic.png" alt="Work-sample" />
@@ -162,7 +180,7 @@
     </section>
     <!-- ------------------------------------------------about me--------------------------------         -->
     <section class="border">
-      <section class="about">
+      <section class="about" id="about-me">
         <div class="abmy">
           <h2>
             About <br />
@@ -238,7 +256,7 @@
       </section>
     </section>
     <!-- -------------------------------------------------contact form----------------------------  -->
-    <section class="contact-form">
+    <section class="contact-form" id="contact-form">
       <div class="form-container">
         <div class="margin-vertical-50px title-container">
           <h3 class="text-white contact-me">Contact me</h3>
@@ -279,5 +297,6 @@
         </form>
       </div>
     </section>
+    <script src="main.js"></script>
   </body>
 </html>
