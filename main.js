@@ -3,7 +3,7 @@ const menu = document.getElementById('menu');
 const blurx = document.querySelector('.blurx');
 
 function openmenu() {
-  menu.style.display = 'block';
+  menu.style.display = 'block'
   blurx.classList.add('blur');
 }
 
@@ -77,7 +77,7 @@ const projects = [
 // ------------popup modal------------------
 
 function popUpModal(project) {
-  const modalContent = `;
+  const modalContent = `
   <div class= "popup-container">
     <div class= "popup">
       <div>
@@ -127,7 +127,7 @@ function popUpModal(project) {
         </div>
       </div>
     </div>
-  </div>`;
+  </div>`
 
   return modalContent;
 }
@@ -138,7 +138,7 @@ function loadProjectCards(projects = []) {
   let projectContents = '';
 
   projects.forEach((project) => {
-    projectContents += `;
+    projectContents += `
     <div class= "works" id= "portfolio">
     <img src="./img/${project.image}" alt="Work-sample" class="img-transition"/>
     <div class="card-work work">
@@ -162,7 +162,7 @@ function loadProjectCards(projects = []) {
     </div>
   </div>
     `;
-  });
+  })
 
   return projectContents;
 }
@@ -185,7 +185,7 @@ function openPopUp(project) {
 
 window.addEventListener('load', () => {
   const portfolioSection = document.querySelector('#work');
-  modalContainer.style.display = 'none';
+  modalContainer.style.display = 'none'
 
   portfolioSection.innerHTML = loadProjectCards(projects);
 
