@@ -4,15 +4,12 @@
 
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
-  - [Install](#install)
   - [Usage](#usage)
-  - [Run tests](#run-tests)
   - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
@@ -39,7 +36,7 @@
 <!-- Features -->
 
 
-### Key Features <a name="using_Figma_Template"></a>
+### Key Features <a name="key-features"></a>
 
 - **[Linters]**
   > A linter is a tool that analyzes your source code to flag programming errors, bugs, stylistic errors, and suspicious constructs
