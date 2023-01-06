@@ -3,7 +3,7 @@ const menu = document.getElementById('menu');
 const blurx = document.querySelector('.blurx');
 
 function openmenu() {
-  menu.style.display = 'block'
+  menu.style.display = 'block';
   blurx.classList.add('blur');
 }
 
@@ -127,7 +127,7 @@ function popUpModal(project) {
         </div>
       </div>
     </div>
-  </div>`
+  </div>`;
 
   return modalContent;
 }
@@ -162,7 +162,7 @@ function loadProjectCards(projects = []) {
     </div>
   </div>
     `;
-  })
+  });
 
   return projectContents;
 }
@@ -185,7 +185,7 @@ function openPopUp(project) {
 
 window.addEventListener('load', () => {
   const portfolioSection = document.querySelector('#work');
-  modalContainer.style.display = 'none'
+  modalContainer.style.display = 'none';
 
   portfolioSection.innerHTML = loadProjectCards(projects);
 
